@@ -31,6 +31,11 @@ body {
   background: #eee;
 }
 
+/* Banner Code */
+section {
+  padding: 2rem 9%;
+}
+
 .header {
   position: fixed;
   top: 15px;
@@ -250,7 +255,50 @@ body {
   border-radius: 10px;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px double #cfcfcf;
+  border-radius: 30px;
+  background: url(/images/banner-img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+  margin: 10px;
+  height: 50rem;
+  margin-top: 140px;
+}
 
+.home .content {
+  text-align: center;
+  border: 5px double #cfcfcf;
+  border-radius: 20px;
+  width: 70rem;
+  padding: 40px;
+  line-height: 50px;
+  box-shadow: var(--box-shadow);
+}
+
+.home .content h3 {
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.home .content h3 span {
+  color: var(--green);
+}
+
+.home .content p {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+.home .btn{
+  width: 50%;
+}
 .header .login-form p a {
   font-size: 1.2rem;
   padding: .5rem 0;
@@ -277,12 +325,20 @@ body {
   .header {
     padding: 2rem;
   }
+
+  section {
+    padding: 2rem;
+  }
 }
 
 @media (max-width:768px) {
 
   #menu-btn {
     display: inline-block;
+  }
+
+  .header .search-form {
+    width: 90%;
   }
 
   .header .navbar {
