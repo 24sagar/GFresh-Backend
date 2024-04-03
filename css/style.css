@@ -352,7 +352,7 @@ section {
   margin: auto 1rem;
   border-radius: 20px;
   padding: 3rem 2rem;
-  background: #e0dfdfce;
+  background: #e9e8e8;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -394,6 +394,63 @@ section {
 
 /* Features */
 
+
+/* Products */
+.products .product-slider {
+  border: 5px double #cfcfcf;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  margin-top: 3rem;
+  height: 50rem;
+}
+
+
+.products .product-slider :first-child {
+  margin-bottom: 2rem;
+}
+
+.products .product-slider .box {
+  border: 2px solid var(--black);
+  background: #e9e8e8;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: var(--box-shadow);
+  transition: .2s linear;
+}
+
+.products .product-slider .box h1 {
+  font-size: 2rem;
+  font-weight: 4rem;
+  padding: 1rem 0;
+  margin: 0;
+  color: var(--black);
+}
+
+.products .product-slider .box:hover {
+  box-shadow: 1px 1px 30px 2px var(--black);
+
+}
+
+.products .product-slider .box img {
+  margin: 1rem 0;
+  height: 20rem;
+}
+
+.products .product-slider .box .price {
+  font-size: 1.8rem;
+  color: var(--black);
+  padding: .5rem 0;
+}
+
+.products .product-slider .box .stars i {
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  color: orange;
+}
+
+/* Products */
 /* Media Queries */
 @media (max-width:991px) {
   html {

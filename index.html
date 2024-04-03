@@ -30,6 +30,9 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="images/groceries.png" type="image/x-icon">
         <!-- Favicon -->
+        <!-- Swiper CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Swiper CDN -->
     </head>
     <body>
         <!-- Header Section -->
@@ -144,6 +147,150 @@
             </div>
         </section>
         <!-- Our Feature Section -->
+        <!-- Our Product Section -->
+        <section class="products" id="products">
+            <h1 class="heading">
+                Our
+                <span>Products</span>
+            </h1>
+            <div class="swiper product-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="images/product-1.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/product-2.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/product-3.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/product-4.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper product-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="images/product-5.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/product-6.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/product-7.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="images/product-8.png" alt="">
+                        <h1>Fresh Orange</h1>
+                        <div class="price">₹80/- ~ ₹100/-</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <a href="#" class="btn">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Product Section -->
         <script src="js/script.js"></script>
+        <!-- Import Swiper library -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".product-slider", {
+          loop: true,
+          spaceBetween: 20,
+          autoplay:{
+            delay:2000,
+            disableOnInteraction:false,
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1020: {
+              slidesPerView: 3,
+            },
+          },
+        });
+        </script>
     </body>
 </html>
