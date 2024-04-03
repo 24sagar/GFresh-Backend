@@ -2,7 +2,7 @@
   --green: green;
   --black: #130f40;
   --light-color: #666;
-  --box-shadow: 0 .1rem 1rem rgba(0, 0, 0.1);
+  --box-shadow: 0 .3rem 1rem rgba(0, 0, 0.1);
   --border: 2rem solid rgba(0, 0, 0.1);
   --outline: 1rem solid rgba(0, 0, 0.1);
 }
@@ -34,6 +34,22 @@ body {
 /* Banner Code */
 section {
   padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+}
+
+.heading span {
+  background-color: var(--green);
+  color: white;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  clip-path: xywh(0 0px 100% 100% round 30% 0);
 }
 
 .header {
@@ -100,7 +116,7 @@ section {
   right: -110%;
   width: 40rem;
   height: 5rem;
-  background: #cfcfcf;
+  background: #e6e4e4;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -136,7 +152,7 @@ section {
   right: -120%;
   padding: 1rem;
   width: 40rem;
-  background: #cfcfcf;
+  background: #d4d4d4;
   font-size: 1.5rem;
 }
 
@@ -226,7 +242,7 @@ section {
   box-shadow: var(--box-shadow);
   padding: 2rem;
   border-radius: 20px;
-  background: #cfcfcf;
+  background: #d4d4d4;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -273,12 +289,12 @@ section {
 
 .home .content {
   text-align: center;
-  border: 5px double #cfcfcf;
-  border-radius: 20px;
+  /* border: 5px double #cfcfcf;
+  border-radius: 20px; */
   width: 70rem;
   padding: 40px;
   line-height: 50px;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
 }
 
 .home .content h3 {
@@ -296,6 +312,8 @@ section {
   font-weight: bold;
   padding: 1rem 0;
 }
+
+
 
 .home .btn {
   width: 50%;
@@ -317,6 +335,64 @@ section {
   right: 2rem;
   transition: .2s linear;
 }
+
+/* Features */
+.features .box-container {
+  border: 5px double #cfcfcf;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.features .box-container .box {
+  border: 2px double #0c0c0c;
+  margin: auto 1rem;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  background: #e0dfdfce;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  height: 40rem;
+}
+
+.features .box-container .box h3 {
+  font-size: 1.8rem;
+  font-weight: 4rem;
+  padding: 1rem 0;
+  margin: 0;
+  color: var(--black);
+  /* To remove default margin */
+}
+
+.features .box-container .box p {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  line-height: 2.5rem;
+  margin: 0;
+  /* To remove default margin */
+}
+
+.features .box-container .box .btn {
+  margin-bottom: 10px;
+}
+
+.features .box-container .box:hover {
+  box-shadow: 1px 1px 30px 2px var(--black);
+}
+
+.features .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+
+/* Features */
 
 /* Media Queries */
 @media (max-width:991px) {
@@ -349,8 +425,8 @@ section {
     right: -120%;
     width: 30rem;
     box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    background-color: #fff;
+    border-radius: 1.5rem;
+    background-color: #e6e4e4;
   }
 
   .header .navbar a {
@@ -363,5 +439,9 @@ section {
 @media (max-width:450px) {
   html {
     font-size: 50%;
+  }
+
+  .header {
+    font-size: 1rem;
   }
 }
