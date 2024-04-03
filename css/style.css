@@ -259,7 +259,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/images/banner-img.jpg) no-repeat;
+  background: url(../images/banner-img.jpg) no-repeat;
   border: 10px double #cfcfcf;
   border-radius: 30px;
   background-position: center;
