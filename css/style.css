@@ -259,9 +259,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(/images/banner-img.jpg) no-repeat;
   border: 10px double #cfcfcf;
   border-radius: 30px;
-  background: url(/images/banner-img.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 17rem;
@@ -296,9 +296,11 @@ section {
   font-weight: bold;
   padding: 1rem 0;
 }
-.home .btn{
+
+.home .btn {
   width: 50%;
 }
+
 .header .login-form p a {
   font-size: 1.2rem;
   padding: .5rem 0;
