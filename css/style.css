@@ -111,6 +111,25 @@ section {
   cursor: pointer;
 }
 
+.header .icons .login {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  margin-right: .3rem;
+  text-align: center;
+  border: 1px solid var(--black);
+}
+
+.header .icons .login:hover {
+  background: var(--green);
+  color: white;
+  cursor: pointer;
+}
+
 #menu-btn {
   display: none;
 }
@@ -239,7 +258,7 @@ section {
   background: var(--green);
   color: white;
 }
-
+/* 
 .header .login-form {
   border: 1px solid #eee;
   position: absolute;
@@ -275,7 +294,7 @@ section {
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 10px;
-}
+} */
 
 .home {
   display: flex;
@@ -736,18 +755,20 @@ section {
 
 /* Footer */
 /* Credit */
-.credit{
+.credit {
   text-align: center;
   padding: 2rem;
-  margin:10px;
+  margin: 10px;
   border: 1px solid var(--black);
   border-radius: 20px;
   font-size: 1.8rem;
   font-weight: 500;
 }
-.credit span{
+
+.credit span {
   color: var(--green);
 }
+
 /* Credit */
 /* Media Queries */
 @media (max-width:991px) {

@@ -17,14 +17,14 @@ document.querySelector("#cart-btn").onclick = () => {
   navbar.classList.remove("active");
 };
 // Login Form Button
-let loginForm = document.querySelector(".login-form");
+// let loginForm = document.querySelector(".login-form");
 
-document.querySelector("#login-btn").onclick = () => {
-  searchForm.classList.remove("active");
-  shoppingCart.classList.remove("active");
-  loginForm.classList.toggle("active");
-  navbar.classList.remove("active");
-};
+// document.querySelector("#login-btn").onclick = () => {
+//   searchForm.classList.remove("active");
+//   shoppingCart.classList.remove("active");
+//   loginForm.classList.toggle("active");
+//   navbar.classList.remove("active");
+// };
 // Menu Button
 let navbar = document.querySelector(".navbar");
 
@@ -41,5 +41,3 @@ window.onscroll = () => {
   loginForm.classList.remove("active");
   navbar.classList.remove("active");
 };
-
-
