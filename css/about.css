@@ -171,8 +171,7 @@ h1 {
   }
 
   .about-container {
-    margin-top: 150px;
-    left: 25px;
+    margin: 150px auto;
   }
 
   .text-container h2 {
