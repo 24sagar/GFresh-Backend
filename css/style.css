@@ -130,6 +130,44 @@ section {
   cursor: pointer;
 }
 
+.header .icons .contact {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  margin-right: .3rem;
+  text-align: center;
+  border: 1px solid var(--black);
+}
+
+.header .icons .contact:hover {
+  background: var(--green);
+  color: white;
+  cursor: pointer;
+}
+
+.header .icons .aboutus {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  margin-right: .3rem;
+  text-align: center;
+  border: 1px solid var(--black);
+}
+
+.header .icons .aboutus:hover {
+  background: var(--green);
+  color: white;
+  cursor: pointer;
+}
+
 #menu-btn {
   display: none;
 }
@@ -258,6 +296,7 @@ section {
   background: var(--green);
   color: white;
 }
+
 /* 
 .header .login-form {
   border: 1px solid #eee;
@@ -890,4 +929,5 @@ section {
   .header {
     font-size: 1rem;
   }
+  
 }
